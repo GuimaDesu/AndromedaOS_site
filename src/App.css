@@ -1,0 +1,175 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0f172a;
+  color: #e2e8f0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: linear-gradient(180deg, #0f172a 0%, #020617 100%);
+}
+
+a {
+  color: #7dd3fc;
+  text-decoration: none;
+}
+
+.app-container {
+  min-height: 100vh;
+  padding-left: 84px;
+}
+
+.resume {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 24px 20px 40px;
+}
+
+@media (max-width: 900px) {
+  .app-container {
+    padding-left: 0;
+  }
+}
+
+.hero-section {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 24px;
+  align-items: start;
+  padding: 32px 32px 28px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 24px;
+  margin-bottom: 32px;
+}
+
+.pretitle {
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+  color: #38bdf8;
+  margin-bottom: 14px;
+  font-size: 0.85rem;
+}
+
+.hero-section h1 {
+  margin: 0;
+  font-size: clamp(2.4rem, 4vw, 3.4rem);
+  color: #f8fafc;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  font-size: 1.1rem;
+  color: #cbd5e1;
+}
+
+.contact-card {
+  display: grid;
+  gap: 10px;
+  padding: 22px;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 18px;
+}
+
+.contact-card p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.section {
+  margin-bottom: 30px;
+}
+
+.section h2 {
+  margin: 0 0 18px;
+  font-size: 1.6rem;
+  color: #f8fafc;
+}
+
+.section p {
+  margin: 0;
+  color: #cbd5e1;
+}
+
+.skills-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.skills-list li {
+  padding: 14px 16px;
+  background: rgba(30, 41, 59, 0.9);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 14px;
+}
+
+.card,
+.education-item {
+  padding: 22px;
+  margin-bottom: 18px;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.12);
+  border-radius: 20px;
+}
+
+.card-header,
+.education-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.card-header h3,
+.education-item h3,
+.card h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  color: #f8fafc;
+}
+
+.company-name {
+  margin: 8px 0 0;
+  font-weight: 600;
+  color: #93c5fd;
+}
+
+.card p,
+.education-item p,
+.education-item span {
+  margin: 8px 0 0;
+  color: #cbd5e1;
+}
+
+@media (max-width: 900px) {
+  .hero-section {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .resume {
+    padding: 18px 16px 32px;
+  }
+
+  .hero-section {
+    padding: 24px;
+  }
+}
